@@ -156,12 +156,12 @@ class AbstractMaze(gym.Env):
     @staticmethod
     def _render_element(el):
         if el == 1:
-            return utils.colorize('■', 'gray')
+            return '■'
         elif el == 0:
-            return utils.colorize('□', 'white')
+            return '□'
         elif el == 9:
-            return utils.colorize('$', 'yellow')
+            return '$'
         elif el == ANIMAT_MARKER:
-            return utils.colorize('A', 'red')
+            return 'A'
         else:
-            return utils.colorize(el, 'cyan')
+            return el
